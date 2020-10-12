@@ -47,7 +47,7 @@ while True:
 		details = requests.get(link)
 		print(f"	Status code from {link} = {details}")
 		if textornot == "yes":
-			(f"	Response text from {link} = {details.text}")
+			print(f"	Response text from {link} = {details.text}")
 			time.sleep(5)
 	elif reqopt == "3" or reqopt == "exit":
 		print(Fore.RED)
